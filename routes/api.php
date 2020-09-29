@@ -2,7 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\BookingController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -17,3 +17,15 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+// GET
+// /api/room/availability
+Route::get('room/availability/{type}/{checkin}/{checkout}',[BookingController::class,'index']);
+// POST
+// /api/room/reservation
+Route::post('room/reservation',[BookingController::class,'create']);
+// PUT
+// /api/room/reservation
+Route::put('room/reservation',[BookingController::class,'update']);
+// DELETE
+// /api/room/reservation
+Route::delete('room/reservation',[BookingController::class,'destroy']);
