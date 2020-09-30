@@ -1,13 +1,13 @@
 # Laravel 8 API + Vue.js - Basic Booking CRUD
 ```
--- Clone or Download the repository
--- Go to the Project Folder
--- Open the terminal in your project folder and do "Composer Install"
--- create your .env file and generate your Laravel App Key
--- If you want you want (or can) execute the laravel migratios (and seeders) or run the SQL queries below.
--- npm run dev
--- php artisan serve
--- Enjoy it!
+- Clone or Download the repository
+- Go to the Project Folder
+- Open the terminal in your project folder and do "Composer Install"
+- create your .env file and generate your Laravel App Key
+- If you want you want (or can) execute the laravel migratios (and seeders) or run the SQL queries below.
+- npm run dev
+- php artisan serve
+- Enjoy it!
 ```
 
 
