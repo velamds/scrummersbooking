@@ -17,12 +17,15 @@ use App\Http\Controllers\BookingController;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::get('/',[BookingController::class,'list']);
+
 // GET
 // /api/room/availability
 Route::get('room/availability/{type}/{checkin}/{checkout}',[BookingController::class,'index']);
 // POST
 // /api/room/reservation
-Route::post('room/reservation',[BookingController::class,'create']);
+Route::post('room/reservation',[BookingController::class,'store']);
 // PUT
 // /api/room/reservation
 Route::put('room/reservation',[BookingController::class,'update']);

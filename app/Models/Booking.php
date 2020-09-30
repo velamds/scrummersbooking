@@ -12,6 +12,6 @@ class Booking extends Model
     protected $fillable = ['id','checkin', 'checkout','room_id'];
 
     public function room(){
-        return $this->hasOne(Room::class);
+        return $this->hasOne(Room::class,'id','room_id');
     }
 }
